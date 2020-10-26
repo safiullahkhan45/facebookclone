@@ -1,0 +1,152 @@
+body {
+	font-family: inherit;
+}
+
+header {
+	height: 85px;
+	font-size: 12px;
+	background-color: #3b5998;
+	color: white;
+}
+
+.logo-img {
+	margin-left: 133px;
+	margin-top: 10px;
+}
+
+.btn-margin {
+	margin-top: 37px;
+}
+
+.forgotten-password {
+	padding-top: 2px;
+	color: #9cb4d8;
+}
+
+.label {
+	margin-bottom: 3px;
+}
+
+.login-btn {
+	height: 23px;
+	width: 45px;
+	font-size: 11px;
+	background-color: #4e78bd;
+	border: 0.5px solid #3b5998;
+}
+
+.body-left {
+	margin-top: 32px;
+	padding-left: 55px;
+	color: #0e385f;
+}
+
+.body-right {
+	margin-top: 10px;
+	padding-left: 40px;
+}
+
+.mid-section {
+	height: 600px;
+}
+
+.fb-body {
+	background: linear-gradient(180deg, white, #CCCCCC);
+}
+
+.footer-btn {
+	height: 20px;
+	width: 30px;
+	padding-bottom: 23px;
+}
+
+.container-custom {
+	padding: 15px 125px;
+}
+
+footer ul li {
+	list-style-type: none;
+	float: left;
+	padding-left: 8px;
+	font-size: 13px;
+}
+
+a {
+	color: #0e385f;
+}
+
+.text-grey {
+	color: grey !important;
+}
+
+.h-rule {
+	border: 0.3px solid grey;
+}
+
+.footer-links {
+	margin-top: 8px;
+}
+
+.copyright {
+	color: grey;
+	font-size: 10px;
+	padding-left: 49px;
+}
+
+.form-surname {
+	margin-left: -15px;
+	width: 107%;
+}
+
+.header-margin {
+	margin-left: -10px;
+}
+
+.header-btn-margin {
+	margin-left: -22px;
+}
+
+.form-gender {
+	font-size: 19px;
+}
+
+.form-terms {
+	font-size: 11px;
+	color: grey;
+}
+
+.form-createpage {
+	font-size: 12px;
+	color: grey;
+}
+
+.form-button {
+	width: 200px;
+}
+
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: initial;
+		background-color: #3b5998;
+	}
+	.mobile .form-group {
+		padding: 2px 40px;
+	}
+	.mobile h1 {
+		padding: 60px 0px;
+		font-size: 60px;
+	}
+	.mobile .row {
+		background-color: #3b5998;
+	}
+	.mobile .form {
+		margin-bottom: 100px;
+	}
+}

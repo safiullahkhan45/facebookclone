@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'facebook/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Facebook - Login or SignUp</title>
+</head>
+<body class="container-fluid">
+	<div class="desktop">
+		<header>
+			<div class="row">
+				<div class="col-md-7">
+					<img class="logo-img" src="{% static 'images/facebook-white.png' %}" height="75px">
+				</div>
+				<div class="col-md-5">
+					<form class="form" method="POST" action="{% url 'home' %}">
+						{% csrf_token %}
+						<div class="row">
+							<div class="col-md-4 mt-3 ml-1">
+								<div class="float-left">
+									<label class="label">Email or phone</label>
+									<input type="text" name="email">
+								</div>
+							</div>
+							<div class="col-md-4 mt-3 ml-1">
+								<label class="label header-margin">Password</label>
+								<input type="password" name="password" class="header-margin">
+								<div class="header-margin forgotten-password">
+									Forgotten Password?
+								</div>
+							</div>
+							<div class="col-md-3 btn-margin ml-1 header-btn-margin">
+								<div class="">
+									<input class="login-btn font-weight-bold text-white" value="Log In" type="submit" name="login">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+		<div class="fb-body">
+			<div class="container-custom">
+				<div class="mid-section">
+					<div class="row">
+						<div class="col-md-7 body-left">
+							<h5 class="font-weight-bold">
+								Facebook helps you connect and share with the </br> people in your life.
+							</h5>
+							<img src="{% static 'images/left-body.png' %}">
+						</div>
+						<div class="col-md-5 body-right">
+							<h1 class="font-weight-bold">Create an account</h1>
+							<h5>Its quick and easy.</h5>
+							<form>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" name="first-name" class="form-control" placeholder="First Name">	
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" name="last-name" class="form-control form-surname" placeholder="Surname">	
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" name="email" class="form-control" placeholder="Email address or Phone number">
+								</div>
+								<div class="form-group">
+									<input type="password" name="password" class="form-control" placeholder="New Password">
+								</div>
+								<div class="form-group">
+									<label>Birthday  </label><i class="fa fa-question-circle"></i><br>
+									<input type="date" name="birthday" class="form-control">
+								</div>
+								<div class="form-group">
+									<label>Gender</label><br>
+									<div class="form-gender">									
+										<input type="radio" name="female">Female
+										<input type="radio" name="male">Male
+										<input type="radio" name="other">Other 
+										<i class="fa fa-question-circle"></i>
+									</div>
+								</div>
+								<div class="form-group">
+									<p class="form-terms">
+										By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <br><a href="#">Cookie Policy</a>. You may receive SMS notifications from us and <br>can opt out at any time.
+									</p>
+								</div>
+								<div class="form-group">
+									<input type="submit" name="signup" value="Sign up" class="btn form-button btn-success">
+								</div>
+								<br>
+								<div class="form-group">
+									<p class="form-createpage font-weight-bold">
+										<a href="#">Create a Page</a> for a celebrity, band or business.
+									</p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-custom">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="footer-lang">
+						<ul class="text-primary">
+							<li class="text-grey">English (UK)</li>
+							<li><a href="#">اردو</a></li>
+							<li><a href="#">پښتو</a></li>
+							<li><a href="#">العربية</a></li>
+							<li><a href="#">हिन्दी</a></li>
+							<li><a href="#">বাংলা</a></li>
+							<li><a href="#">ਪੰਜਾਬੀ</a></li>
+							<li><a href="#">فارسی</a></li>
+							<li><a href="#">ગુજરાતી</a></li>
+							<li><a href="#">Deutsch</a></li>
+							<li><a href="#">Español</a></li>
+							<li><button class="footer-btn font-weight-bold text-center pb-1">+</button></li><br>
+							<hr>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="footer-links">
+						<ul>
+							<li><a href="#">Sign Up</a></li>
+							<li class="pl-3"><a href="#">Login</a></li>
+							<li class="pl-3"><a href="#">Messenger</a></li>
+							<li class="pl-3"><a href="#">Facebook Lite</a></li>
+							<li class="pl-3"><a href="#">Watch</a></li>
+							<li class="pl-3"><a href="#">People</a></li>
+							<li class="pl-3"><a href="#">Pages</a></li>
+							<li class="pl-3"><a href="#">Page categories</a></li>
+							<li class="pl-3"><a href="#">Places</a></li>
+							<li class="pl-3"><a href="#">Games</a></li>
+							<li class="pl-3"><a href="#">Locations</a></li>
+							<li class="pl-3"><a href="#">Marketplace</a></li>
+							<li class="pl-3"><a href="#">Groups</a></li>
+							<li class="pl-3"><a href="#">Instagram</a></li><br>
+							<li><a href="#">Local</a></li>
+							<li class="pl-3"><a href="#">Fundraisers</a></li>
+							<li class="pl-3"><a href="#">Services</a></li>
+							<li class="pl-3"><a href="#">About</a></li>
+							<li class="pl-3"><a href="#">Create ad</a></li>
+							<li class="pl-3"><a href="#">Create Page</a></li>
+							<li class="pl-3"><a href="#">Developers</a></li>
+							<li class="pl-3"><a href="#">Careers</a></li>
+							<li class="pl-3"><a href="#">Privacy</a></li>
+							<li class="pl-3"><a href="#">Cookies</a></li>
+							<li class="pl-3"><a href="#">AdChoices</a></li>
+							<li class="pl-3"><a href="#">Terms</a></li>
+							<li class="pl-3"><a href="#">Help</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p class="copyright mt-3">Facebook &copy; 2020</p>
+		</footer>
+	</div>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+	<div class="mobile">
+		<div class="mobile-header">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<!-- <img class="logo-img" src="images/facebook-white.png" width="100%"> -->
+					<h1 class="font-weight-bold text-white">facebook</h1>
+				</div>
+				<div class="col-sm-12 text-center">
+					<form class="form">
+						<div class="form-group">
+							<input type="text" name="email" class="form-control" placeholder="Email or Phone">
+						</div>
+						<div class="form-group">
+							<input type="password" name="password" class="form-control" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<input type="submit" name="login" value="Log In" class="btn btn-primary col-sm-12 mobile-login">
+						</div>
+						<div class="form-group">
+							<a href="#" class="text-white">Forgot Password?</a>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-12 text-center">
+					<div class="mobile-footer mb-2">
+						<a href="#" class="text-white">signup for facebook?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
